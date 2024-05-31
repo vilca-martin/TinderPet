@@ -1,0 +1,106 @@
+.carousel-buttons {
+    position: relative;
+  }
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .carousel::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.35) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    z-index: 1;
+    display: block;
+    top: 0;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    z-index: 2;
+  }
+  .info_pet {
+    position: absolute;
+    bottom: 46px;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    z-index: 3;
+    display: block;
+    min-width: 100%;
+  }
+  .text_detail {
+    display: none;
+    max-height: 0px;
+    overflow-y: auto;
+    background-color: #131316;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.50);
+    font-size: .75rem;
+  }
+  .btn-match.show {
+    animation: moveUp 1.5s forwards;
+    display: block;
+    font-size: .75rem !important;
+    max-height: 100px;
+  }
+  .carousel-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .carousel-buttons button {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    border: 2px solid var(--color-secondary);
+    color: #ffffff;
+    background-color: transparent;
+    transition: all ease-in-out 3ms;
+  }
+  .color-match {
+    border-color: red !important;
+    color: red !important;
+    font-size: 24px;
+    transition: all ease-in-out 3ms;
+  }
+  .color-match i.position-absolute {
+    z-index: 20;
+    color: red;
+    animation: moveUp 1s forwards, moveHidden 0s 1s forwards; /* Animación y tiempo de espera */
+  }
+  @keyframes moveUp {
+    from {
+      top: 0; /* Punto de partida */
+      opacity: 0; /* Opacidad inicial */
+    }
+    to {
+      top: -100px; /* Punto final */
+      opacity: 1; /* Opacidad final */
+      font-size: 46px;
+    }
+  }
+  @keyframes moveHidden {
+    from {
+      opacity: 1; /* Opacidad final */
+      font-size: 46px;
+    }
+    to {
+      font-size: 26px;
+      top: -200px; /* Punto de partida */
+      opacity: 0; /* Opacidad inicial */
+    }
+  }
+  .carousel-item{
+    min-height: 100%;
+    background-color: red;
+  }

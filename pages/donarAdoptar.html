@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <title>TinderPet</title>
+</head>
+
+<body>
+
+    <!-- spinner loading -->
+    <div id="loading">
+        <div class="spinner-border text-orange" role="status">
+          <span class="sr-only"></span>
+        </div>
+    </div>
+
+    <!--
+         si se quere hacer desaparecer el navbar con el scroll down hay que cambiar
+         la clase "fixed-top" por "absolute-top"
+     -->
+     <nav class="navbar pb-1 mb-md-5 fixed-top" id="navbar">
+        <div class="container">
+            <div>
+                <a class="navbar-brand p-0 m-0" href="../index.html">
+                    <img src="../assets/img/huella-dog.png" width="40" height="40" alt="imagen logo">
+                    <p class="d-inline-block m-0 p-0 ps-1">
+                        TinderPet
+                    </p>
+                </a>
+            </div>
+
+            <ul class="navbar-nav flex-row ml-auto order-1 px-4">
+                <li>
+                    <div class="dropdown text-end">
+                        <a class="d-block link-dark text-decoration-none dropdown-toggle px-2" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="../assets/img/user.png" alt="imagen usuario" width="32" height="32"
+                                class="rounded-circle position-relative" />
+                            <span id="notificacionFlotante" class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </a>
+                        <ul id="dropDownMenuPerfil" class="dropdown-menu dropdown-menu-right text-small position-absolute px-2">
+                            <li><a class="dropdown-item">Publicar</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="../pages/perfilUsuario.html">Perfil</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item">Salir</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="sectionPantallaDonarAdoptar">
+
+            <div class="container w-100 h-100">
+                <div class="row h-100 d-flex align-items-center justify-content-center">
+                    <div class="col-6 d-flex flex-column align-items-center">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fa7bdd53820011.594239f721e01.gif" class="object-fit-cover rounded-circle" height="120" width="120" alt="">
+                        <button type="button" class="btn btn-warning mt-3">
+                            <a href="../pages/registrarDonador.html">Donador</a>
+                        </button>
+                    </div>
+                    <div class="col-6 d-flex flex-column align-items-center">
+                        <img src="https://i.pinimg.com/originals/66/23/e7/6623e73500f43b8d20aaa35a46465641.gif" class="object-fit-cover rounded-circle" height="120" width="120" alt="">
+                        <button type="button" class="btn btn-warning mt-3">Adoptar</button>
+                    </div>
+                </div>
+            </div>            
+          
+        </section>
+    </main>    
+
+    <footer></footer>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
