@@ -163,3 +163,8 @@ main::after {
   text-decoration: none;
   color: rgba(55, 55, 55, 1);
 }
+
+.form_item >div{
+  display: flex;
+  text-align: center;
+}
