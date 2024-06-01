@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,13 +41,9 @@
                 <ul class="navbar-nav flex-row ml-auto order-1 px-4">
                     <li>
                         <div class="dropdown text-end">
-                            <a class="d-block link-dark text-decoration-none dropdown-toggle px-2" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <img src="../assets/img/user.png" alt="imagen usuario" width="32" height="32"
-                                    class="rounded-circle position-relative" />
-                                <span id="notificacionFlotante" class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
-                                    0
-                                </span>
+                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/img/user.png" alt="imagen usuario" width="32" height="32" class="rounded-circle position-relative" />
+                                <span id="notificacionFlotante" class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">0</span>
                             </a>
                             <ul id="dropDownMenuPerfil" class="dropdown-menu dropdown-menu-right text-small position-absolute px-2">
                                 <li><a class="dropdown-item">Publicar</a></li>
@@ -58,7 +54,7 @@
                                 <li>
                                     <hr class="dropdown-divider" />
                                 </li>
-                                <li><a class="dropdown-item">Salir</a></li>
+                                <li><a class="dropdown-item" href="../index.html">Salir</a></li>
                             </ul>
                         </div>
                     </li>
@@ -67,102 +63,100 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class="container">
-                <div class="row m-0 justify-content-center">
-                    <div class="col-12 col-md-4 py-4 my-2">
-                        <form action="post" class="form_container">
-                            <h4 class="form_title">Donador</h4>
-                            <h5>Crear Cuenta</h5>
-                            <div class="form_item">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+        <div class="container">
+            <div class="row m-0 justify-content-center">
+                <div class="contenedorFormulario">
+                    <form action="post" class="form_container">
+                        <h4 class="form_title">Donador</h4>
+                        <h5>Crear Cuenta</h5>
+                        <div class="form_item">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+                        </div>
+                        <div class="form_item">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" placeholder="Apellido" name="apellido" id="apellido">
+                        </div>
+                        <div class="form_item">
+                            <label for="edad">Edad</label>
+                            <input type="text" placeholder="Edad" name="edad" id="edad">
+                        </div>
+                        <div class="form_item">
+                            <label for="zona">Zona</label>
+                            <input type="text" placeholder="Zona" name="zona" id="zona">
+                        </div>
+                        <div class="form_item">
+                            <label for="telefono">Teléfono</label>
+                            <input type="text" placeholder="Teléfono" name="telefono" id="telefono">
+                        </div>
+                        <div class="form_item">
+                            <label for="nombre_usuario">Nombre de Usuario</label>
+                            <input type="text" placeholder="Nombre de Usuario" name="nombre_usuario" id="nombre_usuario">
+                        </div>
+                        <div class="form_item">
+                            <label for="foto_perfil">Foto de perfil</label>
+                            <input type="text" placeholder="Subir foto de perfil" name="foto_perfil" id="foto_perfil">
+                        </div>
+                        <div>
+                            <p>¿En que espacio vivís?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoVivienda" value="departamento">
+                                <p class="form-check-label">Departamento</p>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoVivienda" value="casa">
+                                <p class="form-check-label">Casa</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>¿Tenes plaza o patio cerca?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="espaciosAbiertos" value="si">
+                                <p class="form-check-label">Si</p>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="espaciosAbiertos" value="no">
+                                <p class="form-check-label">No</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>¿Qué tipo de trabajo tenes?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoTrabajo" value="presencial">
+                                <p class="form-check-label">Presencial</p>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoTrabajo" value="hibrido">
+                                <p class="form-check-label">Híbrido</p>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipoTrabajo" value="homeOffice">
+                                <p class="form-check-label">Home Office</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>¿Tenes mascota?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="masMascotas" id="si">
+                                <p class="form-check-label">Si</p>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="masMascotas" id="no">
+                                <p class="form-check-label">No</p>
                             </div>
                             <div class="form_item">
-                                <label for="apellido">Apellido</label>
-                                <input type="text" placeholder="Apellido" name="apellido" id="apellido">
+                                <input type="text" name="masMascotas" id="tipoMascota" placeholder="¿Cúal?">
                             </div>
-                            <div class="form_item">
-                                <label for="edad">Edad</label>
-                                <input type="text" placeholder="Edad" name="edad" id="edad">
-                            </div>
-                            <div class="form_item">
-                                <label for="zona">Zona</label>
-                                <input type="text" placeholder="Zona" name="zona" id="zona">
-                            </div>
-                            <div class="form_item">
-                                <label for="telefono">Teléfono</label>
-                                <input type="text" placeholder="Teléfono" name="telefono" id="telefono">
-                            </div>
-                            <div class="form_item">
-                                <label for="nombre_usuario">Nombre de Usuario</label>
-                                <input type="text" placeholder="Nombre de Usuario" name="nombre_usuario" id="nombre_usuario">
-                            </div>
-                            <div class="form_item">
-                                <label for="foto_perfil">Foto de perfil</label>
-                                <input type="text" placeholder="Subir foto de perfil" name="foto_perfil" id="foto_perfil">
-                            </div>
-                            <div>
-                                <label for="tipoVivienda">¿En que espacio vivís?</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="tipoVivienda" id="departamento">
-                                    <p class="form-check-label">Departamento</p>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="tipoVivienda" id="casa">
-                                    <p class="form-check-label">Casa</p>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="espaciosAbiertos">¿Tenes plaza o patio cerca?</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="espaciosAbiertos" id="si">
-                                    <p class="form-check-label">Si</p>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="espaciosAbiertos" id="no">
-                                    <p class="form-check-label">No</p>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="tipoTrabajo">¿Qué tipo de trabajo tenes?</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="tipoTrabajo" id="presencial">
-                                    <p class="form-check-label">Presencial</p>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="tipoTrabajo" id="hibrido">
-                                    <p class="form-check-label">Híbrido</p>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="tipoTrabajo" id="homeOffice">
-                                    <p class="form-check-label">Home Office</p>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="masMascotas">¿Tenes mascota?</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="masMascotas" id="si">
-                                    <p class="form-check-label">Si</p>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="masMascotas" id="no">
-                                    <p class="form-check-label">No</p>
-                                </div>
-                                <div class="form_item">
-                                    <input type="text" name="masMascotas" id="tipoMascota" placeholder="¿Cúal?">
-                                </div>
-                            </div>
-                            <div class="form_item">
-                                <label for="motivoAdopcion" class="form-label">¿Por qué te gustaría adoptar?</label>
-                                <textarea class="form-control" placeholder="Describe un poco a la mascota, rutina e historia..." id="motivoAdopcion" rows="3"></textarea>
-                            </div>
-                                <button type="submit" class="form_btn">Crear cuenta</button>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form_item">
+                            <label for="motivoAdopcion" class="form-label">¿Por qué te gustaría adoptar?</label>
+                            <textarea class="form-control" placeholder="Describe un poco a la mascota, rutina e historia..." id="motivoAdopcion" rows="3"></textarea>
+                        </div>
+                            <button type="submit" class="form_btn">Crear cuenta</button>
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <footer></footer>
     <!-- JS BOOTSTRAP -->

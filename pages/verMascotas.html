@@ -18,7 +18,6 @@
 
     <!-- ICONS -->
     <script src="https://kit.fontawesome.com/4c604d0a0d.js" crossorigin="anonymous"></script>
-
     <title>TinderPet</title>
 </head>
 
@@ -35,45 +34,41 @@
     <!--
          si se quere hacer desaparecer el navbar con el scroll down hay que cambiar
          la clase "fixed-top" por "absolute-top"
-     -->
-     <nav class="navbar pb-1 mb-md-5 fixed-top" id="navbar">
-        <div class="container">
-            <div>
-                <a class="navbar-brand p-0 m-0" href="#container">
-                    <img src="../assets/img/huella-dog.png" width="40" height="40" alt="imagen logo">
-                </a>
-                <p class="d-inline-block m-0 p-0 ps-1">
-                    TinderPet
-                </p>
-            </div>
-
-            <ul class="navbar-nav flex-row ml-auto order-1 px-4">
-                <li>
-                    <div class="dropdown text-end">
-                        <a href="#navbar-nav" class="d-block link-dark text-decoration-none dropdown-toggle px-2" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="../assets/img/user.png" alt="imagen usuario" width="32" height="32"
-                                class="rounded-circle position-relative" />
-                            <span id="notificacionFlotante" class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
-                               0
-                            </span>
-                        </a>
-                        <ul id="dropDownMenuPerfil" class="dropdown-menu dropdown-menu-right text-small position-absolute px-2">
-                            <li><a class="dropdown-item">Publicar</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item">Perfil</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item">Salir</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    -->
+    <header>
+        <nav class="navbar pb-1 mb-md-5 fixed-top" id="navbar">
+           <div class="container">
+               <div>
+                   <a class="navbar-brand p-0 m-0" href="#container">
+                       <img src="../assets/img/huella-dog.png" width="40" height="40" alt="imagen logo">
+                   </a>
+                   <p class="d-inline-block m-0 p-0 ps-1">TinderPet</p>
+               </div>
+   
+               <ul class="navbar-nav flex-row ml-auto order-1 px-4">
+                   <li>
+                       <div class="dropdown text-end">
+                           <a href="#navbar-nav" class="d-block link-dark text-decoration-none dropdown-toggle px-2" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img src="../assets/img/user.png" alt="imagen usuario" width="32" height="32" class="rounded-circle position-relative" />
+                               <span id="notificacionFlotante" class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">0</span>
+                           </a>
+                           <ul id="dropDownMenuPerfil" class="dropdown-menu dropdown-menu-right text-small position-absolute px-2">
+                               <li><a class="dropdown-item" href="../pages/formularioPublicar.html">Publicar</a></li>
+                               <li>
+                                   <hr class="dropdown-divider" />
+                               </li>
+                               <li><a class="dropdown-item" href="../pages/perfilUsuario.html">Perfil</a></li>
+                               <li>
+                                   <hr class="dropdown-divider" />
+                               </li>
+                               <li><a class="dropdown-item" href="#">Salir</a></li>
+                           </ul>
+                       </div>
+                   </li>
+               </ul>
+           </div>
+       </nav>
+    </header>
 
     <main>
         <section id="sectionPantallaInical">

@@ -42,6 +42,7 @@ main {
   margin-top: var(--altura-nav);
   height: var(--altura-main);
   position: relative;
+  height: 100%;
   /* Agrega posicionamiento relativo para que los elementos posicionados de forma absoluta se basen en este */
 }
 
@@ -53,7 +54,7 @@ main::after {
   top: 0;
   left: 0;
   width: 100%;
-  height: 790px;
+  height: 100%;
   background-image: url(../img/wallpaper.jpg);
   background-size: cover;
   background-position: center;
@@ -68,6 +69,10 @@ main::after {
   width: 100%;
   height: 100%;
   padding: 10px;
+}
+
+#sectionPantallaDonarAdoptar > div > div {
+  padding-top: 65px;
 }
 
 #carouselInicialMascotas {
@@ -114,6 +119,16 @@ main::after {
   border-radius: 20px;
   padding: 1rem;
   min-width: 100%;
+}
+
+.contenedorFormulario {
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorFormulario {
+    width: 90%;
+  }
 }
 
 .form_title {
