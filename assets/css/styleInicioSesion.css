@@ -7,6 +7,16 @@
     border-radius: 10px;
     border: 1px solid rgba(150, 150, 150, 1);
 }
+
+@media only screen  and (max-width: 400px) {
+    .contenedor_perfil {
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+    }
+    .infoUsuario {
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+}
 .contenedor_perfil > .contenedor {
     margin-top: 15px;
 }
@@ -65,16 +75,31 @@ main > .container {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
+.contenedor_publicacion > div > img {
+    height: 145px;
+}
+
+@media screen and (max-width: 500px) {
     .contenedor_publicacion {
-        width: 80%;
+        width: 90%;
+        height: 250px;
         justify-content: space-between;
+    }
+    .contenedor_publicacion > div > img {
+        height: 200px;
     }
 }
 
-.contenedor_publicacion > div > img {
-    height: 140px;
-    margin: 5px;
+@media (min-width: 501px) and (max-width: 768px) {
+    .contenedor_publicacion {
+        width: 75%;
+        height: 210px;
+        justify-content: space-around;
+    }
+    
+    .contenedor_publicacion > div > img {
+        height: 200px;
+    }
 }
 
 .boton {
