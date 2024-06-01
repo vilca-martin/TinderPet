@@ -72,9 +72,9 @@
                     <form action="post" class="form_container">
                         <h2 class="form_title">Publicar Mascota</h2>
                         <div class="mb-3">
-                            <label for="basic-url" class="form-label">Enlace Foto</label>
+                            <label for="fotoMascota" class="form-label">Foto de la Mascota</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="https://example.com/image.jpg" id="basic-url">
+                                <input type="file" class="form-control" placeholder="image.jpg" id="fotoMascota" value="">
                             </div>
                         </div>
                         <div class="form_item">
@@ -83,14 +83,14 @@
                         </div>
                         <div class="form_item">
                             <label for="edad">Edad</label>
-                            <input type="text" placeholder="Edad aproximada de la mascota..." name="edad" id="edad">
+                            <input type="number" placeholder="Edad aproximada de la mascota..." name="edad" id="edad">
                         </div>
                         <div class="form_item">
                             <label for="descripcionMascota" class="form-label">Un poco de mí...</label>
                             <textarea class="form-control" placeholder="Describe un poco a la mascota, rutina e historia..." id="descripcionMascota" rows="3"></textarea>
                         </div>
                         <div class="form_item">
-                            <label for="tipoMascota">Options</label>
+                            <label for="tipoMascota">Categoría</label>
                             <select class="form-select" id="tipoMascota">
                                 <option selected>Tipo de mascota...</option>
                                 <option value="perro">Perro</option>
@@ -118,5 +118,6 @@
         crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/validaciones.js"></script>
 </body>
 </html>
